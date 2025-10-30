@@ -27,7 +27,7 @@ namespace Arv_upgift_2
 
         public virtual void StopEngine()
         {
-            Console.WriteLine("SOUND");
+            Console.WriteLine("BRRrrrrr....");
         }
 
         public virtual void WipeWindshield()

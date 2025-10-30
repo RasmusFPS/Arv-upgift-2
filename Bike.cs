@@ -19,6 +19,11 @@
             Console.WriteLine("Your driving on one wheel");
         }
 
+        public override void WipeWindshield()
+        {
+            Console.WriteLine("Wipes Helemet");
+        }
+
         public override void DisplayInfo()
         {
             Console.WriteLine("-----Vehical Info-----");

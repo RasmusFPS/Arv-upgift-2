@@ -2,12 +2,12 @@
 
 namespace Arv_upgift_2
 {
-    public class Car : Vehicle
+    public class Car : Vehicle    
     {
-        public bool IsElectric { get; set; }
-        public Car(string Brand, string model, string year, string typeofcar, int doors, bool IsElectric) : base(Brand, model, year, typeofcar, doors)
+        public string fuel {  get; set; }
+        public Car(string Brand, string model, string year, string typeofcar, int doors, string fuel) : base(Brand, model, year, typeofcar, doors)
         {
-            this.IsElectric = IsElectric;
+            this.fuel = fuel;
         }
 
         public override void DisplayInfo()
@@ -18,32 +18,16 @@ namespace Arv_upgift_2
             Console.WriteLine($"Year:       {year}");
             Console.WriteLine($"Doors:      {Doors}");
             Console.WriteLine($"Brand:      {TypeofCar}");
-            Console.WriteLine($"IsElectric: {IsElectric}");
+            Console.WriteLine($"Fuel:       {fuel}");
         }
 
-        public override void StartEngine()
-        {
-            if (this.IsElectric)
-            {
-                Console.WriteLine("Zaap zaap Zaap");
-            }
-            else
-            {
-                Console.WriteLine("Vroom Vroom Vrrrr");
-            }
-        }
 
-        public void AutoDrive()
-        {
-            if (this.IsElectric)
-            {
-                Console.WriteLine("AutoPilot On");
-            }
-            else
-            {
-                Console.WriteLine("Cant turn on AutoPilot on this vehical");
-            }
-        }
+
+      
+
+       
+
+       
 
     }
 }
