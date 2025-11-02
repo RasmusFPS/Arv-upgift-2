@@ -6,7 +6,7 @@
         public Bike(string Brand, string model, string year, string typeofcar, int doors, int wheels) 
         : base(Brand, model, year, typeofcar, doors)
         {
-            wheels = wheels;
+            this.wheels = wheels;
         }
 
         public override void StartEngine()
@@ -33,6 +33,7 @@
             Console.WriteLine($"Doors:         {Doors}");
             Console.WriteLine($"TypeofVehical: {TypeofCar}");
             Console.WriteLine($"Brand:         {wheels}");
+            Console.WriteLine("");
         }
 
     }

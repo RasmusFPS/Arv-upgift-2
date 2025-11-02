@@ -10,6 +10,16 @@ namespace Arv_upgift_2
             this.fuel = fuel;
         }
 
+        public override void StartEngine()
+        {
+            Console.WriteLine("vroom vromm");
+        }
+
+        public override void StopEngine()
+        {
+            Console.WriteLine("broooom broom broo....");
+        }
+
         public override void DisplayInfo()
         {
             Console.WriteLine("-----Vehical Info-----");
@@ -19,6 +29,7 @@ namespace Arv_upgift_2
             Console.WriteLine($"Doors:      {Doors}");
             Console.WriteLine($"Brand:      {TypeofCar}");
             Console.WriteLine($"Fuel:       {fuel}");
+            Console.WriteLine("");
         }
 
 

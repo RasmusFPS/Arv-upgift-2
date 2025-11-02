@@ -39,6 +39,15 @@ namespace Arv_upgift_2
             Truck1.WipeWindshield();
             Truck1.StopEngine();
             Console.WriteLine("");
+
+            RocketCar Rocketcar = new RocketCar("Nasa","Titan X-05","2025","RocketCar",2,"RocketFuel",4);
+            Rocketcar.DisplayInfo();
+            Rocketcar.StartEngine();
+            Rocketcar.WipeWindshield();
+            Rocketcar.speed();
+            Rocketcar.StopEngine();
+            Rocketcar.speed();
+
         }
     }
 }

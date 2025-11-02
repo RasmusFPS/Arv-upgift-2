@@ -10,14 +10,8 @@ namespace Arv_upgift_2
     {
         public bool IsElectric { get; set; }
         public ECar(string Brand, string model, string year, string typeofcar, int doors, bool IsElectric, string fuel) : base (Brand, model, year, typeofcar, doors,fuel)       
-            {
-            year = year;
-            Brand = Brand;
-            model = model;
-            typeofcar = typeofcar;
-            doors = doors;
+        {
             this.IsElectric = IsElectric;
-            fuel = fuel;
         }
 
         public void StartEngine()
@@ -45,6 +39,7 @@ namespace Arv_upgift_2
             Console.WriteLine($"TypeofVehical:  {TypeofCar}");
             Console.WriteLine($"Fuel:           {fuel}");
             Console.WriteLine($"IsElectric:     {IsElectric}");
+            Console.WriteLine("");
         }
     }
 }

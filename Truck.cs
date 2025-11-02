@@ -8,13 +8,18 @@ namespace Arv_upgift_2
         public int weight { get; set; }
         public Truck(string Brand, string model, string year, string typeofcar, int doors, int weight) : base(Brand, model, year, typeofcar, doors)
         {
-            weight = weight;
+            this.weight = weight;
         }
 
         public override void StartEngine()
         {
             Console.WriteLine("BRUUMM BRUUMMM");
             enginestarted = true;
+        }
+
+        public override void StopEngine()
+        {
+            Console.WriteLine("BRUUMMMM Bruumm brumm....");
         }
 
         public void Offload()
@@ -39,6 +44,7 @@ namespace Arv_upgift_2
             Console.WriteLine($"Doors: {Doors}");
             Console.WriteLine($"Brand: {TypeofCar}");
             Console.WriteLine($"Brand: {weight}");
+            Console.WriteLine("");
         }
 
     }
